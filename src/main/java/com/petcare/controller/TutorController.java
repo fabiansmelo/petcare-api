@@ -1,3 +1,4 @@
+// Define os endpoints (acoes) | recebem as requisicoes
 package com.petcare.controller;
 
 import com.petcare.domain.model.Tutor;
@@ -6,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@RestController
-@RequestMapping("/tutors")
+@RestController // Informa ao Spring que essa classe vai receber requisições HTTP
+@RequestMapping("/tutors") // Define o caminho base para os endpoints desse controlador
 public class TutorController {
 
     private final TutorService tutorService;
@@ -17,8 +18,8 @@ public class TutorController {
         this.tutorService = tutorService;
     }
 
-    // POST /tutors
-    @PostMapping
+    // Endpoint POST /tutors
+    @PostMapping // Indica que o metodo responde a requisicoes POST
     public Tutor createTutor(@RequestBody com.petcare.Dto.TutorInputDto input) {
         Tutor tutor = new Tutor();
         tutor.setName(input.getName());
@@ -28,7 +29,7 @@ public class TutorController {
         return tutorService.save(tutor);
     }
 
-    // GET /tutors/name/{name}
+    // Endpoint GET /tutors/name/{name}
     @GetMapping("/name/{name}")
     public Optional<Tutor> getByName(@PathVariable String name) {
         return tutorService.findByName(name);

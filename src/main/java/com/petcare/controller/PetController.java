@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController // Informa ao Spring que essa classe vai receber requisições HTTP
-@RequestMapping("/pets") // Define o caminho base da URL para os endpoints desse controlador
+@RestController
+@RequestMapping("/pets")
 public class PetController {
 
     private final PetService petService;

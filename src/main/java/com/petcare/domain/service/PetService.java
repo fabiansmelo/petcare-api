@@ -6,12 +6,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service // Diz pro Spring que é um serviço e ele deve gerenciar ela
+@Service
 public class PetService {
 
     private final PetRepository petRepository;
 
-    // Construtor com injeção de dependência
     public PetService(PetRepository petRepository) {
         this.petRepository = petRepository;
     }

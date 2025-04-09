@@ -1,3 +1,4 @@
+// Logica / regras do negocio - Dados vem do controller | nao preocupa com exibicáo dos dados
 package com.petcare.domain.service;
 
 import com.petcare.domain.model.Tutor;
@@ -6,21 +7,23 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
+@Service  // Spring deve gerenciar automaticamente ela
 public class TutorService {
+
 
     private final TutorRepository tutorRepository;
 
+    // Construtor com injeção de dependência
     public TutorService(TutorRepository tutorRepository) {
         this.tutorRepository = tutorRepository;
     }
 
-    // Salvar novo tutor
+    // Metodo de Salvar novo tutor
     public Tutor save(Tutor tutor) {
         return tutorRepository.save(tutor);
     }
 
-    // Buscar tutor pelo nome
+    // Metodo de Buscar tutor pelo nome
     public Optional<Tutor> findByName(String name) {
         return tutorRepository.findByName(name);
     }

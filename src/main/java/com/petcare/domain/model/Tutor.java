@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
-@Entity(name = "tb_tutor") // Indica que a classe é uma tabel no BD
+@Entity(name = "tb_tutor") // Indica que a classe é uma tabela no BD
 public class Tutor {
 
     @Id // Id é a chave primaria

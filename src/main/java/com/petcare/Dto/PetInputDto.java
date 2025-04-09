@@ -8,7 +8,7 @@ public class PetInputDto {
     private Long tutorId; // apenas o ID do tutor
 
 
-
+    // Getters e setters
     public String getName() {
         return name;
     }

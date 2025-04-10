@@ -1,4 +1,4 @@
-// Define os endpoints (acoes) | recebem as requisicoes
+// Recebem as requisicoes e Define os endpoints (acoes).
 package com.petcare.controller;
 
 import com.petcare.domain.model.Tutor;

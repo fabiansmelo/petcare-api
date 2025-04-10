@@ -1,3 +1,6 @@
+// Transporta dados entre as partes da aplicacao
+// Evita expor diretamente as entidades do DB.
+
 package com.petcare.Dto;
 
 public class TutorInputDto {

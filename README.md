@@ -10,8 +10,10 @@ O principal objetivo deste projeto é exercitar conceitos de desenvolvimento com
 
 - **Java**
 - **Spring Boot**
-  - Spring Web
-  - Spring Data JPA
+  - Spring Web:
+    > Maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
+  - Spring Data JPA:
+    > Ferramenta que ajuda a simplificar a camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
 - **Banco de dados H2** (em memória, usado para testes)
 - **Hibernate** (implementação JPA usada pelo Spring para mapeamento objeto-relacional)
 - **Gradle** – como gerenciador de dependências
